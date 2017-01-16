@@ -121,7 +121,7 @@ def eval_image(image, height, width):
 
 def data_normalization(image):
 
-    image = tf.image.per_image_whitening(image)
+    image = standardize_image(image)
 
     return image
 
